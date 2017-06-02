@@ -1,4 +1,4 @@
-taskmanApp.factory('taskService', function() {
+taskmanApp.service('taskService', function() {
 	// data for all possible tasks
 	var tasksArray = [
 		{name:'Say "NO" to Deforestation', completed: false},
