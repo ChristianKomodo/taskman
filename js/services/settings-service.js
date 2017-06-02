@@ -1,4 +1,4 @@
-taskmanApp.factory('settingsService', function() {
+taskmanApp.service('settingsService', function() {
     var settings = {
         circleSize : 150,
         circleColorA : 'forestgreen',
