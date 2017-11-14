@@ -26,7 +26,6 @@ taskmanApp.service('taskService', function() {
 	var getPercentageComplete = function() {
         var completedTasks = 0;
         for (var i = 0; i < tasksArray.length; i++) {
-            // console.log(taskService[i]);
             if (tasksArray[i].completed) {
                 completedTasks++;
             }
@@ -35,7 +34,7 @@ taskmanApp.service('taskService', function() {
         return completedTasks / tasksArray.length;
 	};
 
-	// shuffle the tasks to give the visitor 6 random tasks
+	// Shuffle the tasks to give the visitor 6 random tasks
 	var shuffleAndLimitArray = function(array) {
 		var m = array.length, t, i;
 		// While there remain elements to shuffle
